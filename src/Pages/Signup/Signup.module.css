@@ -1,0 +1,59 @@
+.signupGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+}
+.left{
+    background-color: #FFF6D3;
+    height: 100vh;
+    display: grid;
+    grid-gap: 30px;
+    place-items: center;
+    place-content: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+.left > div{
+    margin-top: 160px;
+}
+.right > img{
+    position: absolute;
+    right: 0;
+    width: 180px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    place-content: center;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 17px;
+}
+.footer{
+  display: flex;
+  gap: 90px;
+  color: #859BBCF5;
+  font-size: 11px;
+}
+.footerLeft{
+    display: flex;
+    gap: 20px;
+}
+.footer select{
+  color: #859BBCF5;
+  font-size: 11px;
+  border: none;
+  outline: none;
+}
+.left footer{
+    position: absolute;
+    bottom: 0;
+    background-color: #000;
+    height: 17px;
+    width: 33.3%;
+}
