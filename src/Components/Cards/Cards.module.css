@@ -1,0 +1,24 @@
+.flex{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.card{
+    display: flex;
+    background: #fff;
+    font-size: 12px;
+    border: 1px solid #fff;
+    /* padding: 32px 10px; */
+    width: 200px;
+    height: 145px;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    position: relative;
+}
+.smallCardIcon{
+    background-color: #03D4B6;
+    border-radius: 8px;
+    padding: 8px;
+}

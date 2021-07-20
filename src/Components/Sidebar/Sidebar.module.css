@@ -1,0 +1,19 @@
+.body{
+    background-color: #fff;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+.logo{
+    width: 130px;
+    margin-top: 25px;
+}
+.body ul{
+    list-style: none;
+    /* display: grid;
+    grid-gap: 30px; */
+    display: flex;
+    flex-direction: column;
+}

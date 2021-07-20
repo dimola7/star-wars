@@ -1,9 +1,12 @@
 import { useState, FormEvent } from "react";
+import { useHistory} from "react-router-dom";
 import formStyles from "./Form.module.css";
 
 const Form = () => {
   const [password, setPassword] = useState("");
   const [passwordError, setPasswordError] = useState(false);
+
+  const history = useHistory();
 
   const validPassword = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,}$/;
 
@@ -13,8 +16,13 @@ const Form = () => {
       setPasswordError(true);
     } else{
         setPasswordError(false);
+        history.push(`/dashboard`);
     }
   };
+  // const login = () => {
+
+  // }
+
   return (
     <div>
       <form className={formStyles.form} onSubmit={validatePassword}>
@@ -43,7 +51,7 @@ const Form = () => {
             required
           ></input>
         </div>
-        <button>Sign in</button>
+          <button>Sign in</button>
         {passwordError && <p className={formStyles.error}>Your password is invalid</p>}
       </form>
     </div>
