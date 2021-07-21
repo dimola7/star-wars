@@ -10,12 +10,14 @@
     height: 60px;
     background-color: #fff;
     display: flex;
-    gap: 100px;
+    gap: 580px;
     align-items: center;
+    font-size: 15px;
 }
 .nav .navflex{
     display: flex;
     gap: 30px;
+    margin-left: 40px;
 }
 .rightTop{
     display: flex;
@@ -27,17 +29,13 @@
     flex-direction: column;
     gap: 40px;
 }
-.bigCard{
-    display: grid;
-    /* justify-content: center; */
-    /* place-items: center;
-    place-content: center; */
-}
 .search{
-    order: 2;
+    display: flex;
+    gap: 10px;
+    margin-right: 40px;
 }
 .search img{
-    margin-left: -30px;
+    margin-left: -40px;
 }
 .search > input{
     color: #8D99AE;

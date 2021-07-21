@@ -13,7 +13,7 @@ interface Props {
 
 const StarshipCard: React.FC<Props> = (props) => {
     return (
-        <div className={shipCardStyles.div}>
+        <div className={shipCardStyles.starshipDiv}>
         <div className={shipCardStyles.card}>
             <table className={shipCardStyles.table}>
             <thead>

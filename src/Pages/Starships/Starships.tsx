@@ -37,7 +37,7 @@ const Starships = () => {
                         <div className={shipStyles.navflex}>
                             <p><img src={back} alt=""/> Back</p>
                             <p>{starships?.count} Total</p>
-                            <p>Showing 1-20 of {starships?.count}</p>
+                            <p>Showing 1-10 of {starships?.count}</p>
                             <p>b</p>
                             <p>f</p>
                         </div>

@@ -35,7 +35,7 @@ const FilmCard: React.FC<Props> = (props) => {
                 <tr>
                   <td>
                     <span className={filmCardStyles.singleGenreCard}>
-                      <img src={camera} alt='' />
+                      <img src={camera} alt='' className={filmCardStyles.smallCardIcon}/>
                     </span>
                     <span>{film.title}</span>
                   </td>
