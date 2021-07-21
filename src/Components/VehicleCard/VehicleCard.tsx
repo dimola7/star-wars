@@ -13,7 +13,7 @@ interface Props {
 
 const VehicleCard: React.FC<Props> = (props) => {
     return (
-        <div className={vehicleCardStyles.div}>
+        <div className={vehicleCardStyles.vehicleDiv}>
         <div className={vehicleCardStyles.card}>
             <table className={vehicleCardStyles.table}>
             <thead>
@@ -33,7 +33,7 @@ const VehicleCard: React.FC<Props> = (props) => {
             <tbody>
               {props.vehicles.results.map((vehicle:any) => (
                 <tr>
-                  <td>box</td>
+                  <td><input type="checkbox"/></td>
                   <td>{vehicle.name}</td>
                   <td>{vehicle.model}</td>
                   <td>{vehicle.vehicle_class}</td>

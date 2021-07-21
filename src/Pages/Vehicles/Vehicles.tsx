@@ -5,6 +5,8 @@ import NavBar from "../../Components/NavBar/NavBar";
 import VehicleCard from "../../Components/VehicleCard/VehicleCard";
 import {Results} from "../../Components/VehicleCard/VehicleCard"
 import vehicleStyles from "./Vehicles.module.css";
+import searchIcon from "../../assets/search.svg";
+import backArrow from "../../assets/arrow-point-to-right.svg";
 
 const Vehicles = () => {
     const [vehicles, setVehicles] = useState<Results | null>(null);
@@ -31,7 +33,19 @@ const Vehicles = () => {
             <div className={vehicleStyles.right}>
                 <div className={vehicleStyles.rightTop}>
                     <NavBar />
-                    <div className={vehicleStyles.nav}></div>
+                    <div className={vehicleStyles.nav}>
+                    <div className={vehicleStyles.navflex}>
+                            <p><img src={backArrow} alt=""/> Back</p>
+                            <p>{vehicles?.count} Total</p>
+                            <p>Showing 1-10 of {vehicles?.count}</p>
+                            <p>b</p>
+                            <p>f</p>
+                        </div>
+                        <div className={vehicleStyles.search}>
+                            <input type="text"  placeholder="Search for vehicle" />
+                            <img src={searchIcon} alt=""/>
+                        </div>
+                    </div>
                 </div>
                 <div className={vehicleStyles.bigCard}>
                    {vehicles && <VehicleCard vehicles={vehicles}/>}
