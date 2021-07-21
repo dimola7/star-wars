@@ -1,9 +1,15 @@
+.filmDiv {
+  font-size: 12px;
+  color: #2C2C2C;
+  display: flex;
+  justify-content: center;
+}
 .card{
     background: #fff;
+    padding: 5px 25px;
     font-size: 12px;
     border: 1px solid #fff;
-    /* padding: 32px 10px; */
-    width: 80%;
+    width: 90%;
     height: 450px;
     border-radius: 4px;
     text-align: center;
@@ -11,9 +17,6 @@
     cursor: pointer;
     position: relative;
     grid-template-columns: repeat(1, 1fr);
-  }
-  .div {
-    font-size: 12px;
   }
   .table {
     width: 100%;
@@ -28,6 +31,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+  .roundProfile{
+      width: 20px;
+      border-radius: 50%;
+  }
   .right {
     justify-self: right;
     display: flex;
@@ -35,14 +42,12 @@
     align-items: center;
     gap: 0.5rem;
   }
-  th {
-    text-transform: uppercase;
-    color: #99999f;
+  .filmDiv th {
+    color: #A3ABB7;
   }
   table,
   th,
   td {
-    border: 1px solid black;
     border-collapse: collapse;
   }
   th,
@@ -66,37 +71,46 @@
     background-color: #313131;
     position: relative;
   }
-  tr {
+  .filmDiv tr {
     position: relative;
   }
   
-  tr > th:nth-child(1) {
+  .filmDiv tr > th:nth-child(1) {
     width: 20%;
   }
-  tr > th:nth-child(2) {
+  .filmDiv tr > th:nth-child(2) {
     width: 16%;
   }
-  tr > th:nth-child(3) {
-    width: 16%;
+  .filmDiv tr > th:nth-child(3) {
+    width: 19%;
   }
-  tr > th:nth-child(4) {
-    width: 16%;
+  .filmDiv tr > th:nth-child(4) {
+    width: 14%;
   }
-  tr > th:nth-child(5) {
-    width: 12%;
+  .filmDiv tr > th:nth-child(5) {
+    width: 11%;
     /* display: flex;
     gap: 10px; */
   }
-  tr > th:nth-child(6) {
+  .filmDiv tr > th:nth-child(6) {
     width: 20%;
   }
-  /* tr > td:nth-child(1) {
-    float: right;
-    color: #99999f;
+  .filmDiv tr > td:nth-child(1) {
+    display: flex;
+    align-items: center;
+    gap: 7px;
   }
-  tr > td:nth-child(2) {
-    color: #99999f;
+  /* .filmDiv tr > td:nth-child(2) {
+    display: flex;
+    align-items: center;
+    gap: 7px;
   } */
+  .filmDiv tr > td:nth-child(6) {
+    color: #178924;
+  }
+  .filmDiv h2{
+      text-align: start;
+  }
   /* img {
     width: 20px;
     margin-right: 10px;

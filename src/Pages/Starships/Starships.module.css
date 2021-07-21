@@ -9,6 +9,13 @@
     width: 100%;
     height: 60px;
     background-color: #fff;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+.nav .navflex{
+    display: flex;
+    gap: 30px;
 }
 .rightTop{
     display: flex;
@@ -26,3 +33,22 @@
     /* place-items: center;
     place-content: center; */
 }
+.search{
+    order: 2;
+}
+.search img{
+    margin-left: -30px;
+}
+.search > input{
+    color: #8D99AE;
+    background-color: #FAFAFA;
+    font-size: 12px;
+    border: 1px solid #EFEFEF;
+    padding: 9px 4px;
+    width: 170px;
+    border-radius: 4px;
+    outline: none;
+  }
+  .search > input:focus{
+      border: 1px solid #EFEFEF;
+  }

@@ -26,3 +26,24 @@
     /* place-items: center;
     place-content: center; */
 }
+.dropdown{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-right: 40px;
+    margin-top: 12px;
+}
+.dropdown > select{
+    color: #8D99AE;
+    background-color: #FAFAFA;
+    font-size: 12px;
+    border: 1px solid #EFEFEF;
+    padding: 9px 4px;
+    width: 140px;
+    border-radius: 4px;
+    outline: none;
+  }
+  .dropdown > select:focus{
+      border: 1px solid #EFEFEF;
+  }

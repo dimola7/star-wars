@@ -8,17 +8,52 @@
     background: #fff;
     font-size: 12px;
     border: 1px solid #fff;
-    /* padding: 32px 10px; */
-    width: 200px;
-    height: 145px;
+    padding: 15px 15px;
+    width: 170px;
+    height: 110px;
     border-radius: 4px;
     text-align: center;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
     cursor: pointer;
     position: relative;
+    transition: all 0.3s ease-in-out;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.title{
+    color: #04014E;
+    font-size: 13px;
+    font-weight: 600;
 }
 .smallCardIcon{
-    background-color: #03D4B6;
+    background-color: rgba(3, 212, 182, 0.2);
     border-radius: 8px;
     padding: 8px;
+    width: 17px;
+    order: 2;
+}
+.smallCardIcon2{
+    background-color: rgba(33, 112, 255, 0.2);
+    border-radius: 8px;
+    padding: 8px;
+    width: 17px;
+}
+.smallCardIcon3{
+    background-color: rgba(53, 49, 144, 0.2);
+    border-radius: 8px;
+    padding: 8px;
+    width: 17px;
+}
+.smallCardIcon4{
+    background-color: rgba(240, 217, 60, 0.2);
+    border-radius: 8px;
+    padding: 8px;
+    width: 17px;
+}
+.smallCardIcon5{
+    background-color: rgba(99, 90, 208, 0.2);
+    border-radius: 8px;
+    padding: 8px;
+    width: 17px;
 }

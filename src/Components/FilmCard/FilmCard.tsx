@@ -1,4 +1,6 @@
 import filmCardStyles from "./FilmCard.module.css";
+import camera from "../../assets/video-camera (1).svg";
+import profile from "../../assets/pexels-bruno-scramgnon-596132.jpg";
 
 export interface Results {
     count: number;
@@ -13,7 +15,7 @@ interface Props {
 
 const FilmCard: React.FC<Props> = (props) => {
     return (
-        <div className={filmCardStyles.div}>
+        <div className={filmCardStyles.filmDiv}>
             <div className={filmCardStyles.card}>
             <h2>Films</h2>
             <table className={filmCardStyles.table}>
@@ -32,14 +34,13 @@ const FilmCard: React.FC<Props> = (props) => {
               {props.films.results.map((film:any) => (
                 <tr>
                   <td>
-                      {film.title}
                     <span className={filmCardStyles.singleGenreCard}>
-                      {/* <img src={} alt='' /> */}
+                      <img src={camera} alt='' />
                     </span>
-                    {/* <span>{track.title}</span> */}
+                    <span>{film.title}</span>
                   </td>
-                  <td>{film.director}</td>
-                  <td>{film.producer}</td>
+                  <td><span><img className={filmCardStyles.roundProfile} src={profile} alt="" /></span> <span>{film.director}</span></td>
+                  <td><img className={filmCardStyles.roundProfile} src={profile} alt="" /> {film.producer}</td>
                   <td>{film.release_date}</td>
                   <td>{film.episode_id}</td>
                   <td>{film.characters[0]}</td>

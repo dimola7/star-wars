@@ -1,19 +1,28 @@
 .body{
     background-color: #fff;
     height: 100vh;
-    display: grid;
-    justify-content: center;
     position: sticky;
     top: 0;
 }
 .logo{
     width: 130px;
     margin-top: 25px;
+    margin-bottom: 40px;
+    margin-left: 30px;
 }
-.body ul{
-    list-style: none;
-    /* display: grid;
-    grid-gap: 30px; */
-    display: flex;
-    flex-direction: column;
+.sideList{
+    display: grid;
+    grid-gap: 30px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+/* .sideList img:hover{
+    fill: pink;
+} */
+a{
+    text-decoration: none;
+    color: #A3ABB7;
+}
+a:hover{
+    color: #000000;
 }

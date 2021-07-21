@@ -31,7 +31,9 @@ const Species = () => {
             <div className={speciesStyles.right}>
                 <div className={speciesStyles.rightTop}>
                     <NavBar />
-                    <div className={speciesStyles.nav}></div>
+                    <div className={speciesStyles.nav}>
+                        <p>Back</p>
+                    </div>
                 </div>
                 <div className={speciesStyles.bigCard}>
                    {species && <SpeciesCard species={species}/>}

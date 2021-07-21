@@ -37,13 +37,11 @@
     gap: 0.5rem;
   }
   th {
-    text-transform: uppercase;
     color: #99999f;
   }
   table,
   th,
   td {
-    border: 1px solid black;
     border-collapse: collapse;
   }
   th,
@@ -72,7 +70,7 @@
   }
   
   tr > th:nth-child(1) {
-    width: 5%;
+    width: 3%;
   }
   tr > th:nth-child(2) {
     width: 20%;
@@ -84,7 +82,7 @@
     width: 16%;
   }
   tr > th:nth-child(5) {
-    width: 13%;
+    width: 15%;
     /* display: flex;
     gap: 10px; */
   }
@@ -97,13 +95,9 @@
   tr > th:nth-child(8) {
     width: 10%;
   }
-  /* tr > td:nth-child(1) {
-    float: right;
-    color: #99999f;
+  tr > td:nth-child(5) {
+    color: #3620B1;
   }
-  tr > td:nth-child(2) {
-    color: #99999f;
-  } */
   /* img {
     width: 20px;
     margin-right: 10px;

@@ -32,11 +32,11 @@ const StarshipCard: React.FC<Props> = (props) => {
             <tbody>
               {props.starships.results.map((starship:any) => (
                 <tr>
-                  <td>box</td>
+                  <td><input type="checkbox" name="" id="" /></td>
                   <td>{starship.name}</td>
                   <td>{starship.model}</td>
                   <td>{starship.starship_class}</td>
-                  <td>{starship.cost_in_credits}</td>
+                  <td>{starship.cost_in_credits} GC</td>
                   <td>{starship.passengers}</td>
                   <td>{starship.length} Metres</td>
                   <td>{starship.crew}</td>

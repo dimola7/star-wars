@@ -37,13 +37,11 @@
     gap: 0.5rem;
   }
   th {
-    text-transform: uppercase;
     color: #99999f;
   }
   table,
   th,
   td {
-    border: 1px solid black;
     border-collapse: collapse;
   }
   th,

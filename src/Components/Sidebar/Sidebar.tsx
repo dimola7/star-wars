@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import sidebarStyles from"./Sidebar.module.css";
 import logo from "../../assets/Star wars logo.png";
 import dashboard from "../../assets/dashboard.svg";
@@ -9,13 +10,23 @@ const Sidebar = () => {
     return (
         <div className={sidebarStyles.body}>
             <div><img className={sidebarStyles.logo} src={logo} alt=""/></div>
-            <ul>
-                <li><img src={dashboard} alt=""/> Dashboard</li>
-                <li><img src={building} alt=""/> Starships</li>
-                <li><img src={shopping} alt=""/> People</li>
-                <li><img src={shopping} alt=""/> Vehicles</li>
-                <li><img src={menu} alt=""/> Species</li>
-            </ul>
+            <div className={sidebarStyles.sideList}>
+                <Link to="/dashboard">
+                    <div><img src={dashboard} alt=""/> Dashboard</div>
+                </Link>
+                <Link to="/starships">
+                    <div><img src={building} alt=""/> Starships</div>
+                </Link>
+                <Link to="/people">
+                    <div><img src={shopping} alt=""/> People</div>
+                </Link>
+                <Link to="/vehicles">
+                    <div><img src={shopping} alt=""/> Vehicles</div>
+                </Link>
+                <Link to="/species">
+                    <div><img src={menu} alt=""/> Species</div>
+                </Link>
+            </div>
         </div>
     )
 }

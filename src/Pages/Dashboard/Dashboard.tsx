@@ -33,7 +33,16 @@ const Dashboard = () => {
             <div className={dashboardStyles.right}>
                 <div className={dashboardStyles.rightTop}>
                     <NavBar />
-                    <div className={dashboardStyles.nav}></div>
+                    <div className={dashboardStyles.nav}>
+                    <div className={dashboardStyles.dropdown}>
+                        <select name="" id="" required>
+                            <option>Current Year</option>
+                        </select>
+                        <select name="" id="" required>
+                            <option>Current Week</option>
+                        </select>
+                    </div>
+                    </div>
                 </div>
                 <div>
                     <Cards />
