@@ -5,6 +5,8 @@ import NavBar from "../../Components/NavBar/NavBar";
 import PeopleCard from "../../Components/PeopleCard/PeopleCard";
 import peopleStyles from "./People.module.css";
 import {Results} from "../../Components/StarshipCard/StarshipCard";
+import back from "../../assets/arrow-point-to-right.svg";
+import searchIcon from "../../assets/search.svg";
 
 
 const People = () => {
@@ -32,7 +34,19 @@ const People = () => {
             <div className={peopleStyles.right}>
                 <div className={peopleStyles.rightTop}>
                     <NavBar />
-                    <div className={peopleStyles.nav}></div>
+                    <div className={peopleStyles.nav}>
+                    <div className={peopleStyles.navflex}>
+                            <p><img src={back} alt=""/> Back</p>
+                            <p>{people?.count} Total</p>
+                            <p>Showing 1-10 of {people?.count}</p>
+                            <p>b</p>
+                            <p>f</p>
+                        </div>
+                        <div className={peopleStyles.search}>
+                            <input type="text"  placeholder="Search for person" />
+                            <img src={searchIcon} alt=""/>
+                        </div>
+                    </div>
                 </div>
                 <div className={peopleStyles.bigCard}>
                    {people && <PeopleCard people={people}/>}

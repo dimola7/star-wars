@@ -1,4 +1,5 @@
 import peopleCardStyles from "./PeopleCard.module.css";
+import profile from "../../assets/pexels-bruno-scramgnon-596132.jpg";
 
 export interface Results {
     count: number;
@@ -13,7 +14,7 @@ interface Props {
 
 const PeopleCard: React.FC<Props> = (props) => {
     return (
-        <div className={peopleCardStyles.div}>
+        <div className={peopleCardStyles.peopleDiv}>
         <div className={peopleCardStyles.card}>
             <table className={peopleCardStyles.table}>
             <thead>
@@ -33,7 +34,8 @@ const PeopleCard: React.FC<Props> = (props) => {
             <tbody>
               {props.people.results.map((person:any) => (
                 <tr>
-                  <td>{person.name}</td>
+                  {/* <td>{person.name}</td> */}
+                  <td><span><img className={peopleCardStyles.roundProfile} src={profile} alt="" /></span> <span>{person.name}</span></td>
                   <td>{person.birth_year}</td>
                   <td>{person.gender}</td>
                   <td>{person.eye_color}</td>

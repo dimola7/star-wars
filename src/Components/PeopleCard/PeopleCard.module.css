@@ -1,18 +1,27 @@
+.peopleDiv {
+  font-size: 12px;
+  color: #2C2C2C;
+  display: flex;
+  justify-content: center;
+}
 .card{
-    background: #fff;
-    font-size: 12px;
-    border: 1px solid #fff;
-    /* padding: 32px 10px; */
-    width: 80%;
-    height: 640px;
-    border-radius: 4px;
-    text-align: center;
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
-    cursor: pointer;
-    position: relative;
-    /* display: grid; */
-    grid-template-columns: repeat(1, 1fr);
-  }
+  background: #fff;
+  padding: 5px 25px;
+  font-size: 12px;
+  border: 1px solid #fff;
+  width: 90%;
+  height: 640px;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  position: relative;
+  grid-template-columns: repeat(1, 1fr);
+}
+.roundProfile{
+  width: 20px;
+  border-radius: 50%;
+}
   .div {
     font-size: 12px;
   }
@@ -52,64 +61,37 @@
   td {
     cursor: pointer;
   }
-  
-  .currentSong {
-    position: relative;
-  }
-  
-  .currentSong:hover {
-    background-color: #313131;
-  }
-  
-  .currentSongBg {
-    background-color: #313131;
-    position: relative;
-  }
   tr {
     position: relative;
   }
   
-  tr > th:nth-child(1) {
-    width: 18%;
-  }
-  tr > th:nth-child(2) {
-    width: 14%;
-  }
-  tr > th:nth-child(3) {
-    width: 13%;
-  }
-  tr > th:nth-child(4) {
-    width: 14%;
-  }
-  tr > th:nth-child(5) {
-    width: 13%;
-    /* display: flex;
-    gap: 10px; */
-  }
-  tr > th:nth-child(6) {
-    width: 5%;
-  }
-  tr > th:nth-child(7) {
-    width: 10%;
-  }
-  tr > th:nth-child(8) {
+  .peopleDiv tr > th:nth-child(1) {
     width: 15%;
   }
-  tr > th:nth-child(9) {
+  .peopleDiv tr > th:nth-child(2) {
     width: 10%;
   }
-  /* tr > td:nth-child(1) {
-    float: right;
-    color: #99999f;
+  .peopleDiv tr > th:nth-child(3) {
+    width: 9%;
   }
-  tr > td:nth-child(2) {
-    color: #99999f;
-  } */
-  /* img {
-    width: 20px;
-    margin-right: 10px;
-  } */
-  /* tr > td:nth-child(4) {
-    color: #99999f;
-  } */
-  
+  .peopleDiv tr > th:nth-child(4) {
+    width: 11%;
+  }
+  .peopleDiv tr > th:nth-child(5) {
+    width: 10%;
+  }
+  .peopleDiv tr > th:nth-child(6) {
+    width: 7%;
+  }
+  .peopleDiv tr > th:nth-child(7) {
+    width: 8%;
+  }
+  .peopleDiv tr > th:nth-child(8) {
+    width: 10%;
+  }
+  .peopleDiv tr > th:nth-child(9) {
+    width: 20%;
+  }
+  .peopleDiv tr > td:nth-child(9) {
+    color: #178924;
+  }
