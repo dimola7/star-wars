@@ -24,12 +24,6 @@
   .table {
     width: 100%;
   }
-  .popularLoader {
-    min-height: 70vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
