@@ -7,6 +7,8 @@ import shipStyles from "./Starships.module.css";
 import {Results} from "../../Components/StarshipCard/StarshipCard";
 import searchIcon from "../../assets/search.svg";
 import back from "../../assets/arrow-point-to-right.svg";
+import {IoIosArrowBack} from "react-icons/io";
+import {IoIosArrowForward} from "react-icons/io";
 
 const Starships = () => {
     const [starships, setStarships] = useState<Results | null>(null);
@@ -38,8 +40,8 @@ const Starships = () => {
                             <p><img src={back} alt=""/> Back</p>
                             <p>{starships?.count} Total</p>
                             <p>Showing 1-10 of {starships?.count}</p>
-                            <p>b</p>
-                            <p>f</p>
+                            <p><IoIosArrowBack /></p>
+                            <p><IoIosArrowForward /></p>
                         </div>
                         <div className={shipStyles.search}>
                             <input type="text"  placeholder="Search for starship" />

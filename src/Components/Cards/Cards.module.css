@@ -4,7 +4,7 @@
     justify-content: center;
 }
 .card{
-    display: flex;
+    /* display: flex; */
     background: #fff;
     font-size: 12px;
     border: 1px solid #fff;
@@ -21,17 +21,27 @@
 .card:hover{
     transform: scale(1.1);
 }
+.flex .card{
+    display: flex;
+    justify-content: space-between;
+}
 .title{
     color: #04014E;
     font-size: 13px;
     font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
 }
 .smallCardIcon{
     background-color: rgba(3, 212, 182, 0.2);
     border-radius: 8px;
     padding: 8px;
     width: 17px;
-    order: 2;
+    /* order: 2; */
+    /* display: flex;
+    justify-content: flex-end; */
 }
 .smallCardIcon2{
     background-color: rgba(33, 112, 255, 0.2);

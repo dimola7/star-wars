@@ -7,6 +7,8 @@ import peopleStyles from "./People.module.css";
 import {Results} from "../../Components/StarshipCard/StarshipCard";
 import back from "../../assets/arrow-point-to-right.svg";
 import searchIcon from "../../assets/search.svg";
+import {IoIosArrowBack} from "react-icons/io";
+import {IoIosArrowForward} from "react-icons/io";
 
 
 const People = () => {
@@ -39,8 +41,8 @@ const People = () => {
                             <p><img src={back} alt=""/> Back</p>
                             <p>{people?.count} Total</p>
                             <p>Showing 1-10 of {people?.count}</p>
-                            <p>b</p>
-                            <p>f</p>
+                            <p><IoIosArrowBack /></p>
+                            <p><IoIosArrowForward /></p>
                         </div>
                         <div className={peopleStyles.search}>
                             <input type="text"  placeholder="Search for person" />

@@ -23,13 +23,13 @@
     height: 60px;
     background-color: #fff;
     display: flex;
-    gap: 580px;
+    justify-content: space-between;
     align-items: center;
     font-size: 15px;
 }
 .nav .navflex{
     display: flex;
-    gap: 30px;
+    gap: 20px;
     margin-left: 40px;
 }
 .search{
