@@ -5,6 +5,8 @@ import NavBar from "../../Components/NavBar/NavBar";
 import SpeciesCard from "../../Components/SpeciesCard/SpeciesCard";
 import {Results} from "../../Components/SpeciesCard/SpeciesCard";
 import speciesStyles from "./Species.module.css";
+import searchIcon from "../../assets/search.svg";
+import backArrow from "../../assets/arrow-point-to-right.svg";
 
 const Species = () => {
     const [species, setSpecies] = useState<Results | null>(null);
@@ -32,7 +34,17 @@ const Species = () => {
                 <div className={speciesStyles.rightTop}>
                     <NavBar />
                     <div className={speciesStyles.nav}>
-                        <p>Back</p>
+                    <div className={speciesStyles.navflex}>
+                            <p><img src={backArrow} alt=""/> Back</p>
+                            <p>{species?.count} Total</p>
+                            <p>Showing 1-10 of {species?.count}</p>
+                            <p>b</p>
+                            <p>f</p>
+                        </div>
+                        <div className={speciesStyles.search}>
+                            <input type="text"  placeholder="Search for vehicle" />
+                            <img src={searchIcon} alt=""/>
+                        </div>
                     </div>
                 </div>
                 <div className={speciesStyles.bigCard}>

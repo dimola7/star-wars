@@ -13,7 +13,7 @@ interface Props {
 
 const SpeciesCard: React.FC<Props> = (props) => {
     return (
-        <div className={speciesCardStyles.div}>
+        <div className={speciesCardStyles.speciesDiv}>
         <div className={speciesCardStyles.card}>
             <table className={speciesCardStyles.table}>
             <thead>
@@ -33,7 +33,7 @@ const SpeciesCard: React.FC<Props> = (props) => {
             <tbody>
               {props.species.results.map((onespecies:any) => (
                 <tr>
-                  <td>box</td>
+                  <td><input type="checkbox" /></td>
                   <td>{onespecies.name}</td>
                   <td>{onespecies.classification}</td>
                   <td>{onespecies.designation}</td>
