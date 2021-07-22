@@ -1,15 +1,16 @@
-.body{
+.navbarDiv{
     background-color: #fff;
     height: 60px;
     width: 100%;
     display: flex;
     align-items: center;
 }
-.body img{
+.navbarDiv img{
     margin-left: auto;
     order: 2;
     margin-right: 40px;
 }
-.body p{
+.navbarDiv p{
     margin-left: 25px;
+    text-transform: capitalize;
 }

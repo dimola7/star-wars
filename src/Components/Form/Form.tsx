@@ -19,9 +19,6 @@ const Form = () => {
         history.push(`/dashboard`);
     }
   };
-  // const login = () => {
-
-  // }
 
   return (
     <div>

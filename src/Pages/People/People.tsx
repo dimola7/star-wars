@@ -9,10 +9,12 @@ import back from "../../assets/arrow-point-to-right.svg";
 import searchIcon from "../../assets/search.svg";
 import {IoIosArrowBack} from "react-icons/io";
 import {IoIosArrowForward} from "react-icons/io";
+import Loader from "../../Components/Loader/Loader";
 
 
 const People = () => {
     const [people, setPeople] = useState<Results | null>(null);
+    const [isLoading, setIsLoading] = useState(true);
     
         useEffect(() => {
             try {
@@ -20,10 +22,12 @@ const People = () => {
                     const {
                       data,
                     } = await axios.get(`https://swapi.dev/api/people/`);
+                    setIsLoading(false);
                     setPeople(data);
                   };
                   fetchPeople();
             } catch (error) {
+                setIsLoading(false);
                 console.log(error)
             }   
           }, []);
@@ -50,9 +54,13 @@ const People = () => {
                         </div>
                     </div>
                 </div>
+                {isLoading ? (
+          <Loader />
+        ) : (
                 <div className={peopleStyles.bigCard}>
                    {people && <PeopleCard people={people}/>}
                 </div>
+        )}
             </div>
         </div>
     )
