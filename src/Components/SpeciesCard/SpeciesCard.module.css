@@ -59,13 +59,13 @@
     width: 3%;
   }
   .speciesDiv tr > th:nth-child(2) {
-    width: 13%;
+    width: 10%;
   }
   .speciesDiv tr > th:nth-child(3) {
     width: 10%;
   }
   .speciesDiv tr > th:nth-child(4) {
-    width: 12%;
+    width: 10%;
   }
   .speciesDiv tr > th:nth-child(5) {
     width: 10%;
@@ -74,11 +74,11 @@
     width: 10%;
   }
   .speciesDiv tr > th:nth-child(7) {
-    width: 19%;
+    width: 20%;
   }
   .speciesDiv tr > th:nth-child(8) {
     width: 15%;
   }
   .speciesDiv tr > th:nth-child(9) {
-    width: 18%;
+    width: 12%;
   }

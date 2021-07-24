@@ -23,6 +23,9 @@ a{
     text-decoration: none;
     color: #A3ABB7;
 }
-a:hover{
+a:hover, .active{
     color: #000000;
+    background-color: #f2f2f2;
+    /* padding: 200px; */
+    height: 40px;
 }

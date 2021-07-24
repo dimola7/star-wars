@@ -14,6 +14,7 @@ import Loader from "../../Components/Loader/Loader";
 const Starships = () => {
   const [starships, setStarships] = useState<Results | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [search, setSearch] = useState("");
   // const [pageCount, setPageCount] = useState(1);
 
   useEffect(() => {
@@ -60,7 +61,7 @@ const Starships = () => {
               </p>
             </div>
             <div className={shipStyles.search}>
-              <input type="text" placeholder="Search for starship" />
+              <input type="text" placeholder="Search for starship" onChange={(e) => {setSearch(e.target.value)}} />
               <img src={searchIcon} alt="" />
             </div>
           </div>
